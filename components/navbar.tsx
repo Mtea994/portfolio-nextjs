@@ -7,6 +7,8 @@ import { NAVIGATION } from "@/app/config";
 import { cn } from "../lib/utils";
 import { usePathname } from "next/navigation";
 import { ContactForm } from "./contact-form";
+import ModeToggle from "./mode-toggle";
+import MyCommandDialog from "./my-command";
 function NavBar() {
   const pathname = usePathname();
   return (
@@ -39,6 +41,10 @@ function NavBar() {
               Contact
             </p>
           </ContactForm>
+          <div className="flex gap-1">
+            <ModeToggle />
+            <MyCommandDialog />
+          </div>
         </div>
       </nav>
     </header>
