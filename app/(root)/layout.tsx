@@ -1,4 +1,6 @@
+import { Toaster } from "@/components/ui/sonner";
 import NavBar from "../../components/navbar";
+import Footer from "@/components/footer";
 
 export default function RootLayout({
   children,
@@ -7,6 +9,8 @@ export default function RootLayout({
     <>
       <NavBar />
       {children}
+      <Toaster position="bottom-right" />
+      <Footer />
     </>
   );
 }
