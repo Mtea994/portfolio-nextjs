@@ -14,7 +14,7 @@ import { Button } from "./ui/button";
 function NavBar() {
   const pathname = usePathname();
   return (
-    <header className="h-16 w-full max-w-2xl mx-auto flex items-center gap-4 px-6 md:px-20 bg-background sticky top-0 z-50">
+    <header className="h-16 w-full max-w-2xl mx-auto flex items-center gap-4 px-6 md:px-20 bg-background sticky top-0 z-90 ">
       <nav className="hidden flex-col md:flex md:flex-row md:items-center md:justify-between w-full h-full border-b">
         <Link href="/" className="flex items-center gap-2 font-semibold">
           <Square className="size-5 fill-foreground" />
