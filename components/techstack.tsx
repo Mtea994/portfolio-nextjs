@@ -45,7 +45,7 @@ export default function TechStack() {
         </div>
         <div className="flex flex-wrap gap-1.5">
           {TECH_STACK.map((tech) => (
-            <Link href={tech.href} key={tech.title} target="_blank">
+            <Link href={tech.href || "#"} key={tech.title} target="_blank">
               <Badge variant="secondary">
                 <div
                   className={`${getRandomColor()} w-2 h-2 mr-2 rounded-full`}

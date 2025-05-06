@@ -21,10 +21,10 @@ export const NAVIGATION = [
     title: "About",
     href: "/about",
   },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
+  // {
+  //   title: "Blog",
+  //   href: "/blog",
+  // },
   //contact is included in the navigation by contact-form.tsx
 ];
 
@@ -67,13 +67,50 @@ export const OTHERS = [
 
 export const TECH_STACK = [
   {
+    title: "React",
+    href: "https://reactjs.org",
+  },
+  {
     title: "Next.js",
     href: "https://nextjs.org",
   },
   {
-    title: "React",
-    href: "https://reactjs.org",
+    title: "TypeScript",
+    href: "https://www.typescriptlang.org",
   },
+  {
+    title: "JavaScript",
+    href: "https://mdn.digital/",
+  },
+  {
+    title: "HTML",
+    href: "https://www.mdn.digital/",
+  },
+  {
+    title: "CSS",
+    href: "https://www.mdn.digital/",
+  },
+  {
+    title: "Material UI",
+    href: "https://tailwindcss.com",
+  },
+  {
+    title: "Sass",
+    href: "https://sass-lang.com",
+  },
+  {
+    title: "Node.js",
+    href: "https://nodejs.org",
+  },
+  {
+    title: "Gatsby",
+    href: "https://www.prisma.io",
+  },
+  {
+    title: "NextAuth.js",
+    href: "https://next-auth.js.org",
+  },
+
   {
     title: "Git",
     href: "https://git-scm.com",
@@ -83,16 +120,25 @@ export const TECH_STACK = [
     href: "https://figma.com",
   },
   {
-    title: "MySQL",
-    href: "https://www.mysql.com",
+    title: "OOP",
+    // href: "https://www.mysql.com",
+  },
+
+  {
+    title: "antd",
+    href: "https://ant.design",
   },
   {
-    title: "TypeScript",
-    href: "https://www.typescriptlang.org",
+    title: "gsap",
+    href: "https://greensock.com/gsap",
   },
   {
-    title: "Docker",
-    href: "https://www.docker.com",
+    title: "three.js",
+    href: "https://threejs.org",
+  },
+  {
+    title: "charts.js",
+    href: "https://www.chartjs.org",
   },
   {
     title: "Tailwind CSS",
@@ -111,10 +157,6 @@ export const TECH_STACK = [
     href: "https://wordpress.org",
   },
   {
-    title: "Convex",
-    href: "https://convex.dev",
-  },
-  {
     title: "shadcn/ui",
     href: "https://ui.shadcn.com",
   },
@@ -122,122 +164,71 @@ export const TECH_STACK = [
 
 export const PROJECTS: Project[] = [
   {
-    title: "Resume creator tool with AI",
+    title: "Next js Dashboard",
     description:
-      "Create your resume in a few minutes. The tool will help you with the content and design.",
+      "A simple dashboard Build with Next.js 15, Tailwind CSS and Next Auth.",
     href: "https://cvzdarma.cz",
     image: "/projects/cvzdarma-project.png",
-    tags: [
-      "Next.js 15",
-      "Tailwind CSS",
-      "Prisma",
-      "OpenAI",
-      "Server actions",
-      "shadcn/ui",
-      "nodemailer",
-      "Clerk",
-    ],
+    tags: ["Next.js 15", "Tailwind CSS", "Neo", "Next Auth", "Server actions"],
     featured: true,
   },
   {
-    title: "Place of amazing portfolios",
+    title: "Game Play store",
     description:
-      "Are you looking for inspiration for your portfolio? You're in the right place! Here you will find a collection of amazing portfolios by amazing people.",
+      "A simple game store build with React.js, Tailwind CSS and Firebase.",
     href: "https://list.swajp.me",
     github: "https://github.com/swajp/list-swajp.me",
     image: "/projects/list-project.png",
     tags: [
-      "Next.js 14",
+      "React.js 14",
       "Tailwind CSS",
-      "Convex",
-      "shadcn/ui",
-      "nodemailer",
-      "Clerk",
+      "Firebase",
+      "Firebase Auth",
+      "React Router",
+      "React Query",
     ],
     featured: true,
   },
   {
-    title: "devkoutek.cz",
+    title: "Mehreen jugni fashion store",
     description:
-      "A discord place for czech developers. To show their projects and help each other.",
-    href: "https://devkoutek.cz",
-    github: "https://github.com/swajp/devkoutek.cz",
+      "Ecommerce store i build for my friend using wordpress and woocommerce",
+    href: "https://mehreenjugni.com",
+    // github: "https://github.com/swajp/devkoutek.cz",
     image: "/projects/devkoutek-project.png",
-    tags: ["NextJS", "Tailwind CSS"],
+    tags: ["Wordpress", "Woocommerce", "Elementor"],
   },
   {
-    title: "casecobra",
+    title: "Skywayjobs - Job board",
     description:
-      "E-commerce website for a company selling cases for mobile phones.",
-    href: "https://shop-casecobra.vercel.app",
-    github: "https://github.com/swajp/casecobra",
+      "A job board and blog build with Wordpress and woocommerce. I build it for my friend.",
+    href: "https://skywayjobs.com",
+    // github: "https://github.com/swajp/casecobra",
     image: "/projects/casecobra-project.png",
-    tags: ["Next.js", "React", "Tailwind CSS", "Stripe", "Prisma"],
+    tags: ["Wordpress", "Woocommerce", "Elementor"],
   },
   {
-    title: "DRIE",
-    description: "Full-stack developer, designer, and creator.",
-    href: "https://drie.cz",
+    title: "Khalily aesthetics - Appointment booking for a clinic",
+    description:
+      "A booking system for a clinic build with Wordpress and woocommerce",
+    href: "https://khalilyaesthetics.com/",
     image: "/projects/drie-project.png",
-    tags: ["Next.js", "React", "Tailwind CSS", "Framer motion"],
+    tags: ["Wordpress", "Woocommerce", "Elementor", "crocoblock", "jetplugin"],
   },
   {
-    title: "yogaboskovice",
-    description: "Website for yoga studio in Boskovice.",
-    href: "https://yogaboskovice.cz",
+    title: "Abasyn international school",
+    description: "Landing page for a school ",
+    href: "https://aisp.edu.pk",
     image: "/projects/yogaboskovice-project.png",
     tags: ["Wordpress", "Elementor"],
   },
   {
-    title: "mujqrkod.cz",
-    description: "QR code generator without registration. Fast and simple.",
-    href: "https://mujqrkod.vercel.app",
+    title: "aitdb - job",
+    description: "freelance project for a company",
+    href: "aitdb.com",
     github: "https://github.com/swajp/mujqrkod",
     image: "/projects/mujqrkod-project.png",
     tags: ["Next.js", "Tailwind CSS", "shadcn/ui"],
-  },
-  {
-    title: "uzx-elektro",
-    description: "A website for an company using Loxone technology",
-    href: "https://uzx-elektro.cz",
-    image: "/projects/uzxelektro-project.png",
-    tags: ["Next.js", "Tailwind CSS"],
-  },
-  {
-    title: "uzx-security",
-    description: "A website for a security company.",
-    href: "https://uzx-security.cz",
-    image: "/projects/uzxsecurity-project.png",
-    tags: ["Next.js", "Tailwind CSS"],
-  },
-  {
-    title: "Shortner Tool",
-    description: "Fast and simple URL shortner tool.",
-    href: "https://short.drie.cz",
-    image: "/projects/short-project.png",
-    tags: ["Next.js", "Tailwind CSS", "MongoDB"],
-  },
-  {
-    title: "my-story",
-    description: "Share your stories with the world.",
-    href: "https://story-sharing-app-nu.vercel.app/",
-    github: "https://github.com/swajp/my-story",
-    image: "/projects/mystory-project.png",
-    tags: ["Next.js", "Tailwind CSS", "Framer motion", "Convex"],
-  },
-  {
-    title: "LoRa",
-    description: "LoRa network offered in Boskovice.",
-    href: "https://lora.drie.cz",
-    image: "/projects/lora-project.png",
-    tags: ["Next.js", "Tailwind CSS", "Framer motion"],
-  },
-  {
-    title: "betterUML",
-    description: "Create effectively and easy class diagrams.",
-    href: "https://better-uml.vercel.app",
-    image: "/projects/betteruml-project.png",
-    tags: ["Next.js", "Tailwind CSS", "Framer motion"],
   },
 ];
 
@@ -251,10 +242,10 @@ export const PROJECT_STUDY = {
 };
 
 export const TV_MOMENT = {
-  title: "Česká televize - chytrý záhon",
+  title: "BlockSafe - A startup Based on a project from the university",
   description:
-    "Me and my friends created smart garden in FabLab Brno. Czech Television was interested in our project and made a report about it.",
-  href: "https://ceskatelevize.cz/porady/10435049455-dobre-rano/323291310020045/cast/979790/?fbclid=PAAabfE1ERbpcae1dZn3FQuPekhNSWUEe0rlydX2hdSdR4PSrd196cWCwEJo4_aem_th_AcUvo8AdEaCSL-inO6rt8vajivjaILd7Ec2Ftl1_cf_lvweMQBbmn4y3t7-_G02DM_o",
+    "Me and my friends created blockchain based project for authenticating documents on bitcoin blockchain for our final year project during our bachelors in Computer systems engineering. later on it was selected for incubation at durshal incubation center, it was among only five startups selected for incbation.",
+  href: "https://durshal.kpitb.gov.pk/startup/blocksafepk",
   image: "/projects/chytry-zahon.png",
-  tags: ["PHP", "Arduino", "Figma", "3D printing"],
+  tags: ["blockchain", "bitcoin", "web3", "MERN Stack"],
 };

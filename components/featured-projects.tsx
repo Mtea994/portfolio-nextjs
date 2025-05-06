@@ -36,7 +36,7 @@ function FeaturedProjects() {
               className="md:basis-1/2 lg:basis-1/3 "
             >
               <Card className="h-full group" key={project.title}>
-                <div className="p-4">
+                <div className="p-2">
                   <Link href={project.href}>
                     <div className="overflow-hidden rounded-lg">
                       <Image
@@ -57,7 +57,7 @@ function FeaturedProjects() {
                       {project.github && <GithubLink link={project.github} />}
                     </div>
                   </CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
+                  {/* <CardDescription>{project.description}</CardDescription> */}
                 </CardHeader>
                 <CardFooter className="*:mr-2 *:mb-2 flex flex-wrap">
                   {project.tags.map((tag) => (
@@ -70,9 +70,9 @@ function FeaturedProjects() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="flex justify-start mt-4 p-5">
-          <CarouselPrevious className="static relative top-auto left-auto transform-none m-0" />
-          <CarouselNext className="static relative top-auto left-auto transform-none" />
+        <div className="flex justify-start relative top-0 left-0 w-full h-full gap-4 p-4 mt-5">
+          <CarouselPrevious className="!relative top-auto left-auto !transform-none !-translate-y-0" />
+          <CarouselNext className="!relative !-translate-y-0 !-right-0" />
         </div>
       </Carousel>
     </div>

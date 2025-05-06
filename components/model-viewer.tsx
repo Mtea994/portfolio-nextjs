@@ -19,7 +19,7 @@ export function Model() {
   const mesh = useRef<Mesh>(null!);
   const { scene, animations } = useGLTF("./spheron.glb");
   const { actions } = useAnimations(animations, mesh);
-  const color = "##89cff0";
+  const color = "#89cff0";
 
   useFrame(() => {
     {

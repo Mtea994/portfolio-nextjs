@@ -32,11 +32,11 @@ export default function RootLayout({
       <SpeedInsights />
       <body className={cn("h-full min-h-screen antialiased", inter.className)}>
         <ThemeProvider
-          attribute={"class"}
-          defaultTheme="dark"
-          enableSystem={false}
-          storageKey="mtea-theme"
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
           disableTransitionOnChange
+          storageKey="mtea-theme"
         >
           {children}
         </ThemeProvider>

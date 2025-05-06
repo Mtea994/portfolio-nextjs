@@ -1,10 +1,8 @@
 import AboutMe from "@/components/about-me";
 import FeaturedProjects from "@/components/featured-projects";
 import Hero from "@/components/hero";
-import ModelViewer from "@/components/model-viewer";
 import ProjectStudy from "@/components/project-study";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 export default function Home() {
   return (
     <main

@@ -14,7 +14,7 @@ import GithubLink from "./github-link";
 
 function Projects() {
   return (
-    <div className="flex flex-col gap-0 justify-center w-full max-w-2xl mx-auto p-8 pb-20 sm:p-10 sm:pt-0 h-screen">
+    <div className="flex flex-col gap-0 justify-center w-full max-w-2xl mx-auto p-8 pb-20 sm:p-10 sm:pt-0">
       <h2 className="text-4xl font-bold">Projects</h2>
       <p className="text-muted-foreground mt-1 mb-4">
         Here are some of my projects.
