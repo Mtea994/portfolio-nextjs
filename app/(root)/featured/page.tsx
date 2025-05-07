@@ -16,7 +16,7 @@ function CodeForPakistan() {
     "https://www.linkedin.com/feed/update/urn:li:activity:7054732064570454016?utm_source=share&utm_medium=member_desktop&rcm=ACoAABcpkvEBuXv2OZ-jEhH0L0cUh2ZVwqmc-jM";
   return (
     <div className="flex flex-col gap-4 sm:gap-10 mx-auto w-full max-w-2xl  p-8 pb-20  sm:p-20 ">
-      <div className="flex flex-row gap-10 pr-10 space-x-10">
+      <div className="flex flex-col sm:flex-row  gap-10 sm:pr-10 sm:space-x-10">
         <div>
           <h1 className={cn("text-xl font-semibold md:text-3xl lg:text-4xl")}>
             Featured - Code for Pakistan <br /> (Fellowship & Mentorship)
@@ -81,7 +81,7 @@ function CodeForPakistan() {
       </div>
       <hr className="my-5 text-muted-foreground" />
 
-      <div className="flex flex-row-reverse gap-10 pr-10 -space-x-10">
+      <div className="flex flex-col sm:flex-row-reverse gap-10 sm:pr-10 sm:-space-x-10">
         <div>
           <h2 className="font-semibold text-lg">My Role as a Mentor</h2>
           <p className="mt-5 max-w-prose text-muted-foreground sm:text-lg">

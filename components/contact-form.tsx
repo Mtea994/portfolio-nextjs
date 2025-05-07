@@ -27,6 +27,8 @@ import { Loader2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
+
 const formSchema = z.object({
   email: z
     .string()
@@ -56,8 +58,42 @@ export function ContactForm({ children }: { children: React.ReactNode }) {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      setLoading(true);
+
+      if (values.honeypot) {
+        return;
+      }
+
+      const response = await fetch("/api/contact/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (response.ok) {
+        toast.success("Message sent successfully.", {
+          duration: 5000,
+        });
+
+        setLoading(false);
+
+        form.reset();
+      } else {
+        setLoading(false);
+        toast.error("Failed to send the form. Please try again.", {
+          duration: 5000,
+        });
+      }
+    } catch (error) {
+      setLoading(false);
+      toast.error("Failed to send the form. Please try again.", {
+        duration: 5000,
+      });
+    }
   }
 
   return (
@@ -131,18 +167,20 @@ export function ContactForm({ children }: { children: React.ReactNode }) {
                     </FormItem>
                   )}
                 />
-                <div className="flex justify-between gap-6">
+                <div className="flex justify-center gap-6">
                   <DrawerClose asChild>
-                    <Button variant="outline">Cancel</Button>
+                    <Button variant="outline" size={"lg"}>
+                      Cancel
+                    </Button>
                   </DrawerClose>
-                  <Button disabled={loading} type="submit">
+                  <Button disabled={loading} type="submit" size={"lg"}>
                     {loading ? (
                       <>
                         <Loader2 className="h-4 mr-1 w-4 animate-spin" />
                         Sending...
                       </>
                     ) : (
-                      <p>Submit</p>
+                      <p>Send</p>
                     )}
                   </Button>
                 </div>

@@ -12,12 +12,12 @@ function About() {
   return (
     <main
       className={cn(
-        "flex flex-col w-full mx-auto max-w-2xl justify-center sm:items-start p-8 pb-20 sm:p-20",
+        "flex flex-col w-full mx-auto max-w-2xl justify-center sm:items-start p-4 pb-20 sm:p-20",
         "sm:pt-4"
       )}
     >
       <div className="flex flex-col md:flex-row gap-4">
-        <div className="w-full space-y-3 py-4 px-8">
+        <div className="w-full space-y-3 py-4 sm:px-8">
           <div>
             <h2 className="text-4xl font-bold">About</h2>
             <p className="text-muted-foreground mt-1 mb-4">
