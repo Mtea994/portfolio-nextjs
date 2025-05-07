@@ -68,7 +68,7 @@ export function Model() {
 
 function ModelViewer() {
   return (
-    <div style={{ width: "600px", height: "400px" }} className="self-center">
+    <div className="self-center sm:w-[600px] sm:h-[400px] w-[380px] h-[400px]">
       <Canvas
         camera={{ position: [3, 3, 3], fov: 30 }} // Adjust position for desired zoom level
       >

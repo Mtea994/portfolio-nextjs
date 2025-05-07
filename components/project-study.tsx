@@ -15,7 +15,7 @@ function ProjectStudy() {
   const cfpFellow = CFPFELLOWSHIP;
   const startup = STARTUP;
   return (
-    <div className="flex flex-col self-center w-full p-8 pb-20 sm:p-10 sm:pt-0">
+    <div className="flex flex-col self-center w-full sm:pb-20 pt-20 sm:p-10 sm:pt-0">
       <h2 className="text-4xl font-bold">Featured Online</h2>
       <p className="text-muted-foreground mt-1 mb-4">
         I have been featured online in the following projects.

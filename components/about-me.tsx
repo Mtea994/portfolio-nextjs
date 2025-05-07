@@ -7,15 +7,15 @@ import MyGithubCalendar from "./github-calendar";
 
 function AboutMe() {
   return (
-    <div className="flex flex-col self-center w-full p-8 pb-20 sm:p-10 sm:pt-0 ">
+    <div className="flex flex-col sm:self-center w-full pb-20 sm:p-10 sm:pt-0 ">
       <h2 className="text-4xl font-bold mb-4">About me</h2>
-      <div className="grid sm:grid-cols-2 gap-4 sm:gap-8 w-full">
-        <div className="flex flex-col gap-4">
+      <div className="grid sm:grid-cols-2 gap-4 sm:gap-8">
+        <div className="flex flex-col gap-4 sm:w-auto w-[360px]">
           <Connect />
           <MyGithubCalendar />
         </div>
-        <div className="flex flex-col gap-4">
-          <div className="grid grid-cols-2 gap-4">
+        <div className="flex flex-col gap-4 sm:w-auto w-[360px]">
+          <div className="grid sm:grid-cols-2 gap-4">
             <Available />
             <Location />
           </div>

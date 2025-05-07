@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main
       className={cn(
-        "flex flex-col w-full mx-auto max-w-2xl justify-center sm:items-start p-8 pb-20 sm:p-20",
+        "flex flex-col w-full mx-auto max-w-2xl justify-center sm:items-start p-4 pb-20 sm:p-20",
         "sm:pt-4"
       )}
     >

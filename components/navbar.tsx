@@ -70,12 +70,12 @@ function NavBar() {
       </nav>
       <Sheet>
         <div className="w-full flex md:hidden justify-between">
-          <Link
-            href={"#"}
-            className="flex items-center gap-2 font-semibold w-fit"
-          >
-            <Square className="size-5 fill-foreground" />
-            <p>Imtinan Khurshid</p>
+          <Link href="/" className="flex items-center gap-2 font-semibold">
+            {/* <Square className="size-5 fill-foreground" /> */}
+            <p className="font-bold py-1 px-2 border-2 border-black rounded-[6px] bg-white dark:bg-black dark:border-white">
+              IK
+            </p>
+            <p>Mtea994</p>
           </Link>
           <div>
             <ModeToggle />

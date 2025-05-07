@@ -9,10 +9,10 @@ const font = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 function Hero() {
   return (
-    <div className="flex flex-col self-center text-center justify-center mx-auto items-center w-full  p-8 pb-20 sm:pt-0 ">
+    <div className="flex flex-col self-center text-center justify-center mx-auto items-center w-full  sm:p-8 sm:pb-20 sm:pt-0 ">
       <ModelViewer />
       <ContactForm>
-        <div className="inline-flex items-center w-[200px] rounded-lg border px-3 py-1 text-sm font-medium mb-4">
+        <div className="inline-flex items-center w-[200px] justify-center rounded-lg border px-3 py-1 text-sm font-medium mb-4">
           <span className="relative flex h-2 w-2 mr-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75"></span>
             <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan-400"></span>

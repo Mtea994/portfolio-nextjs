@@ -23,7 +23,7 @@ import { cn } from "@/lib/utils";
 
 function FeaturedProjects() {
   return (
-    <div className="flex flex-col w-full p-8 pb-8 sm:p-10 sm:pt-0 self-center">
+    <div className="flex flex-col w-full pt-20 sm:p-10 sm:pt-0 self-center">
       <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
       <p className="text-muted-foreground mt-1 mb-4">
         Here are some of my projects i have done in free time or for my friends
