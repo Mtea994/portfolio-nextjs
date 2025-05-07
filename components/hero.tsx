@@ -40,7 +40,8 @@ function Hero() {
         building modern web applications using Next.js, React, and Tailwind CSS.
       </p>
       <Link
-        href="#"
+        href="/Senior-frontend-dev.pdf"
+        target="_blank"
         className="mt-8 bg-gradient-to-r from-rose-700 to-rose-500 font-semibold font-mono px-4 py-2 rounded-full flex items-center justify-center gap-1.5 text-white"
       >
         <DownloadIcon className="size-5" />

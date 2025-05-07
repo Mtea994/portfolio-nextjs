@@ -1,7 +1,12 @@
 import { cn } from "@/lib/utils";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About",
+};
 
 function About() {
   return (
@@ -49,19 +54,7 @@ function About() {
             into elegant solutions, balancing rapid iteration with architectural
             integrity.
           </p>
-          <p>
-            One of my favorite projects that I&apos;ve worked on is a project
-            called
-            <Link
-              href="https://drie.cz"
-              className="underline underline-offset-2"
-            >
-              DRIE
-            </Link>
-            . I collaborate on it with friends, and we aim not only to offer web
-            development but also to create modern tools and solutions for the
-            online environment.
-          </p>
+
           <p>
             Beyond code, I&apos;m passionate about lifelong learning and the
             ever‑evolving frontend landscape and explore emerging patterns like
@@ -70,20 +63,33 @@ function About() {
             teams building the next generation of web experiences.
           </p>
           <p>
-            I cannot share the projects i have done professionally here, but you
-            can check out my freelance or hobby projects
-            <Link href="/projects" className="underline underline-offset-2">
+            you can check some of the work i have done in free time for my
+            friends and Family{" "}
+            <Link
+              href="/projects"
+              className="underline underline-offset-2 text-sm italic text-blue-500 cursor:pointer"
+            >
               here
+            </Link>{" "}
+            or{" "}
+            <Link
+              href="/Senior-frontend-dev.pdf"
+              target="_blank"
+              className="underline underline-offset-2 text-sm italic text-blue-500 cursor:pointer"
+            >
+              Download my resume
             </Link>
+            {"  "}
+            to see my professional experience.
           </p>
         </div>
         <div className="w-full flex justify-center">
           <div className="p-4 border w-fit rounded-lg bg-gradient-to-b from-primary/10 from-60%">
             <Image
-              src="/mira2.jpg"
+              src="/me.jpg"
               className="rounded-lg"
-              width={400}
-              height={400}
+              width={2625}
+              height={3500}
               alt="Miroslav Stejskal"
             />
           </div>

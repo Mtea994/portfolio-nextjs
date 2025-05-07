@@ -2,11 +2,11 @@ import ProjectStudy from "@/components/project-study";
 import Projects from "@/components/projects";
 import { cn } from "@/lib/utils";
 import React from "react";
-// import { Metadata } from "next";
+import { Metadata } from "next";
 
-// export const metadata: Metadata = {
-//   title: "Projects",
-// };
+export const metadata: Metadata = {
+  title: "Projects",
+};
 
 function ProjectsPage() {
   return (

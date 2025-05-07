@@ -65,7 +65,7 @@
   --radius: 0.5rem;
 }
 
-[data-theme="dark"] :root {
+.dark {
   --background-hsl: 0 0% 0%;
   --foreground-hsl: 0 0% 98%;
 

@@ -1,7 +1,7 @@
 type Project = {
   title: string;
   description: string;
-  href: string;
+  href?: string;
   github?: string;
   image: string;
   tags: string[];
@@ -167,18 +167,19 @@ export const PROJECTS: Project[] = [
     title: "Next js Dashboard",
     description:
       "A simple dashboard Build with Next.js 15, Tailwind CSS and Next Auth.",
-    href: "https://cvzdarma.cz",
-    image: "/projects/cvzdarma-project.png",
+    href: "https://github.com/Mtea994/nextjs-dashboard",
+    github: "https://github.com/Mtea994/03-Fullstack-App-store-React-Firebase",
+
+    image: "/projects/nextjs-dashboard.png",
     tags: ["Next.js 15", "Tailwind CSS", "Neo", "Next Auth", "Server actions"],
     featured: true,
   },
   {
-    title: "Game Play store",
+    title: "Fullstack APP Store",
     description:
       "A simple game store build with React.js, Tailwind CSS and Firebase.",
-    href: "https://list.swajp.me",
-    github: "https://github.com/swajp/list-swajp.me",
-    image: "/projects/list-project.png",
+    github: "https://github.com/Mtea994/03-Fullstack-App-store-React-Firebase",
+    image: "/projects/full-stack.png",
     tags: [
       "React.js 14",
       "Tailwind CSS",
@@ -194,8 +195,7 @@ export const PROJECTS: Project[] = [
     description:
       "Ecommerce store i build for my friend using wordpress and woocommerce",
     href: "https://mehreenjugni.com",
-    // github: "https://github.com/swajp/devkoutek.cz",
-    image: "/projects/devkoutek-project.png",
+    image: "/projects/mehreen-jugni.png",
     tags: ["Wordpress", "Woocommerce", "Elementor"],
   },
   {
@@ -203,8 +203,7 @@ export const PROJECTS: Project[] = [
     description:
       "A job board and blog build with Wordpress and woocommerce. I build it for my friend.",
     href: "https://skywayjobs.com",
-    // github: "https://github.com/swajp/casecobra",
-    image: "/projects/casecobra-project.png",
+    image: "/projects/skyway.png",
     tags: ["Wordpress", "Woocommerce", "Elementor"],
   },
   {
@@ -212,40 +211,39 @@ export const PROJECTS: Project[] = [
     description:
       "A booking system for a clinic build with Wordpress and woocommerce",
     href: "https://khalilyaesthetics.com/",
-    image: "/projects/drie-project.png",
+    image: "/projects/khalily-aesthetics.png",
     tags: ["Wordpress", "Woocommerce", "Elementor", "crocoblock", "jetplugin"],
   },
   {
     title: "Abasyn international school",
     description: "Landing page for a school ",
     href: "https://aisp.edu.pk",
-    image: "/projects/yogaboskovice-project.png",
+    image: "/projects/aisp.png",
     tags: ["Wordpress", "Elementor"],
   },
   {
     title: "aitdb - job",
     description: "freelance project for a company",
-    href: "aitdb.com",
-    github: "https://github.com/swajp/mujqrkod",
-    image: "/projects/mujqrkod-project.png",
+    href: "https://aitdb.com",
+    image: "/projects/aitdb.png",
     tags: ["Next.js", "Tailwind CSS", "shadcn/ui"],
   },
 ];
 
-export const PROJECT_STUDY = {
-  title: "uzx-elektro / uzx-security",
+export const CFPFELLOWSHIP = {
+  title: "Fellow & Mentor / Code For Pakistan",
   description:
-    "A complete redesign of the company's website. Design was created in Figma. The website is built with Next.js and Tailwind CSS. For components, I used shadcn/ui. The company is focused on Loxone technology and JABLOTRON security.",
-  href: "/uzx",
-  image: "/projects/uzx-mix.png",
-  tags: ["Next.js", "React", "Tailwind CSS", "shadcn/ui"],
+    "During my journey with Code for Pakistan, I had the privilege of being a Fellow in the 7th KP Civic Fellowship Program and later a Mentor for the KP Women Civic Digital Internship Program. As a fellow, I developed scalable frontend solutions using React.js and Next.js, collaborating with a talented team to build impactful civic tech projects. Transitioning to a mentorship role, I guided aspiring women developers, delivering hands-on training in modern frontend frameworks and best practices. My efforts were recognized by Code for Pakistan, showcasing my commitment to fostering an inclusive tech community.",
+  href: "/featured",
+  image: "/projects/code-for-pak.png",
+  tags: ["Next.js", "React", "Tailwind CSS", "shadcn/ui", "community"],
 };
 
-export const TV_MOMENT = {
-  title: "BlockSafe - A startup Based on a project from the university",
+export const STARTUP = {
+  title: "Blocksafe - One of Top five Startups in Khyber Pakhtunkhwa",
   description:
-    "Me and my friends created blockchain based project for authenticating documents on bitcoin blockchain for our final year project during our bachelors in Computer systems engineering. later on it was selected for incubation at durshal incubation center, it was among only five startups selected for incbation.",
+    "Me and my friends created blockchain based project for authenticating documents on bitcoin blockchain as final year project for our bachelors in Computer systems engineering. It was selected for incubation at durshal incubation center, it was one of the five startups with the youngest founders selected among more than 1000 applicants for incubation.",
   href: "https://durshal.kpitb.gov.pk/startup/blocksafepk",
-  image: "/projects/chytry-zahon.png",
+  image: "/projects/blocksafe.png",
   tags: ["blockchain", "bitcoin", "web3", "MERN Stack"],
 };

@@ -32,19 +32,10 @@ function Footer() {
             ))}
           </div>
           <div className="flex flex-col gap-4 w-fit">
-            {/* {OTHERS.map((item) => (
-              <Link
-                href={item.href}
-                key={item.href}
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {item.title}
-              </Link>
-            ))} */}
             <div className="inline-flex items-center rounded-lg border px-3 py-1 text-sm font-medium mb-4">
               <span className="relative flex h-2 w-2 mr-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-green-400"></span>
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75"></span>
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan-400"></span>
               </span>
               <Link
                 href={OTHERS[0].href}
