@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
-
+import LenisProvider from "@/components/lenis-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -31,15 +31,17 @@ export default function RootLayout({
       <Analytics />
       <SpeedInsights />
       <body className={cn("h-full min-h-screen antialiased", inter.className)}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-          storageKey="mtea-theme"
-        >
-          {children}
-        </ThemeProvider>
+        <LenisProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+            storageKey="mtea-theme"
+          >
+            {children}
+          </ThemeProvider>
+        </LenisProvider>
       </body>
     </html>
   );
