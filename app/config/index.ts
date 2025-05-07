@@ -244,6 +244,6 @@ export const STARTUP = {
   description:
     "Me and my friends created blockchain based project for authenticating documents on bitcoin blockchain as final year project for our bachelors in Computer systems engineering. It was selected for incubation at durshal incubation center, it was one of the five startups with the youngest founders selected among more than 1000 applicants for incubation.",
   href: "https://durshal.kpitb.gov.pk/startup/blocksafepk",
-  image: "/projects/blocksafe.png",
+  image: "/projects/blocksafe-i.png",
   tags: ["blockchain", "bitcoin", "web3", "MERN Stack"],
 };
